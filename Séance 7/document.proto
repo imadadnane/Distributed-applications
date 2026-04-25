@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package demo;
+
+message Document {
+    int32 id = 1;
+    string title = 2;
+    string author = 3;
+    repeated string tags = 4;
+    string classification = 5;
+    
+    // Ajout d'un champ optionnel pour tester la compatibilité
+    int32 priority = 6;
+}
